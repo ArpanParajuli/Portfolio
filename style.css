@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0% 5%;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 0px 20px;
+  width: 100%;
+  height: 10vh;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header button{
+    display: none;
+    background: none;
+    border: none;
+}
+
+header button:hover{
+     background-color: whitesmoke;
+}
+
+header button img{
+     width: 50px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* Header Section */
+
+
+
+
+/* Section Developer */
+
+#developer{
+    margin: 10% 0%;
+    display: flex;
+}
+
+.developer-info{
+    flex: 0.5;
+    max-height: 60%;
+}
+
+.developer-info h1{
+    font-size: 2rem;
+    /* color: cornflowerblue; */
+}
+
+.developer-info p{
+    margin-top: 5%;
+}
+
+.developer-info h1 span{
+    color: cornflowerblue;
+}
+
+.developer-info button{
+    margin-top: 10%;
+    background-color: cornflowerblue;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.developer-info button:hover{
+    background-color: black;
+}
+
+.developer-img{
+    margin-left: 5%;
+    /* border: 2px solid black; */
+    flex: 0.5;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.developer-img img{
+    border: 5px solid cornflowerblue;
+    border-radius: 50%;
+    height:  auto;
+    width: 80%;
+}
+
+
+
+/* Section Developer */
+
+
+
+/* Section Skills */
+
+
+#skills{
+    margin: 10% 0%;
+   
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;   
+}
+
+#skills h1{
+    width: 100%;
+     font-size: 2rem;
+     margin-bottom: 5%;
+     color: cornflowerblue;
+}
+
+.skills-front{
+    max-height: 90%;
+    flex: 0.5;
+    margin-bottom: 5%;
+}
+
+.skills-back{
+    margin-bottom: 5%;
+    max-height: 90%;
+    flex: 0.5;
+}
+
+
+.skills-back ul li{
+    margin:5% 0%;
+   list-style-type: none;
+   font-size: large;
+   font-weight: bold;
+}
+
+.skills-front ul li{
+    font-size: large;
+    font-weight: bold;
+    margin:5% 0%;
+    list-style-type: none;
+ }
+/* Section Skills */
+
+
+/* Projects Section */
+
+  #projects{
+   margin: 10% 0%;
+  }
+
+  #projects h1{
+    font-size: 2rem;
+    color: cornflowerblue;
+  }
+
+  .project-list{
+    margin-top: 5%;
+    display: grid;
+    gap: 30px 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project-list div img{
+     width: 100%;
+     height: auto;
+  }
+
+
+/* Projects Section */
+
+ 
+
+
+/* Contact Section */
+
+#contact{
+    margin: 10% 0%;
+}
+
+
+#contact h1{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    color: cornflowerblue;
+}
+.contact-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.contact-list div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact div a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#contact div a img{
+    width: 30%;
+    height: auto;
+    
+}
+
+/* Contact Section */
+
+
+#feedback{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#feedback h1{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+form{
+    margin: 10% 0%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form label{
+    margin-top: 5%;
+    font-size: 1.1rem;
+}
+
+form input{
+    height: 40px;
+    width: 100%;
+}
+
+form button{
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+
+form textarea{
+    
+   max-width: 100%;
+}
+  footer{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 1rem;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    nav a {
+      display: none;
+    }
+
+    header button{
+        display: block;
+        filter: invert(1);
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+
+    #developer{
+        flex-direction: column;
+    }
+
+
+    .developer-img{
+       margin-top: 5%;
+    }
+
+    .skills-list{
+        grid-template-columns: 1fr;
+    }
+
+  
+
+    .project-list{
+     grid-template-columns: 1fr;
+    }
+    
+    .project-list div{
+        margin:10% 0%;
+    }
+
+    .contact-list{
+        grid-template-columns: 1fr;
+         gap: 50px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form button{
+        width: 50%;
+    }
+   
+  }
